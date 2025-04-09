@@ -4,10 +4,10 @@ region = "us-east-1"
 
 resource "aws_instance" "two" {
 count = 5
-ami = "ami-0ddc798b3f1a5117e"
+ami = "07a6f770277670015"
 instance_type = "t2.medium"
-key_name = "swikp"
-vpc_security_group_ids = ["sg-05f044979e305302e"]
+key_name = "myserver"
+vpc_security_group_ids = ["sg-039e0d894a4062929"]
 tags = {
 Name = var.instance_names[count.index]
 }
